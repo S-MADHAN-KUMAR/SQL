@@ -19,3 +19,21 @@
 
 -- DROP TABLE IF EXISTS name_of_the_table    "Checking if the table exists before drop or delete "
 
+-- =============================================================================================================
+
+-- DESC name_of_the_table;                   "Describe Table Structure"
+
+-- output will be like :
+
+--       +--------+---------------+------+-----+---------+-------+
+--       | Field  | Type          | Null | Key | Default | Extra |
+--       +--------+---------------+------+-----+---------+-------+
+--       | id     | int           | NO   | PRI | NULL    |       |
+--       | name   | varchar(10)   | YES  |     | NULL    |       |
+--       | salary | decimal(10,2) | YES  |     | NULL    |       |
+--       +--------+---------------+------+-----+---------+-------+
+--       3 rows in set (0.22 sec)
+
+-- =============================================================================================================
+
+-- TRUNCATE TABLE users;                           "Delete all rows but keep structure"
