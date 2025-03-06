@@ -36,3 +36,4 @@ ALTER TABLE students MODIFY COLUMN age INT;
 ALTER TABLE students DROP CONSTRAINT students_chk_1;
 
 =================================================================================================================
+

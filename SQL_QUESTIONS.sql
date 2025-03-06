@@ -26,7 +26,6 @@ ADD FOREIGN KEY(super_id)
 REFERENCES employee(emp_id)
 ON DELETE SET NULL;
 
-
 CREATE TABLE client(
     client_id INT PRIMARY KEY,
     client_name varchar(40),
