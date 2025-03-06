@@ -49,14 +49,12 @@ CREATE TABLE branch_supplier(
     supply_type VARCHAR(40),
     PRIMARY KEY(branch_id,supplier_name),
     FOREIGN KEY (branch_id) REFERENCES branch(branch_id) ON DELETE CASCADE
-    
 );
 
 DESCRIBE TABLE employee;
 DESCRIBE TABLE branch;
 SELECT * FROM employee;
 SELECT * FROM branch;
-
 
 INSERT INTO employee VALUES(100, 'David', 'Wallace', '1967-11-17', 'M', 250000, NULL, NULL);
 
@@ -159,7 +157,6 @@ WHERE supplier_name LIKE '%LABELS';
 SELECT *
 FROM client
 WHERE client_name LIKE '%SCHOOL%';
-
 
 
 --UNION---
@@ -279,7 +276,9 @@ from teacher
 right join
 students on teacher.teacher_id=students.teacher_id;
 
-select * from employee;`
+select * from employee;
+
+//======================================================================================//
 
 select AVG(salary) as average,sex
 from employee
@@ -291,7 +290,6 @@ from employee
 where branch_id in (
     select branch_id 
 from branch
-    
 );
 
 select branch_id 
